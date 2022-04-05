@@ -52,7 +52,7 @@ const Home = () => {
     <MainPageLayout>
       <input
         type="text"
-        placeholder="what are u looking for"
+        placeholder="what are we looking for"
         onChange={onInputChange}
         onKeyDown={onKeyDown}
         value={input}

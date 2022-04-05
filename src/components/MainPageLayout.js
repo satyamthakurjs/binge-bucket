@@ -6,8 +6,8 @@ const MainPageLayout = ({ children }) => {
   return (
     <div>
       <Title
-        title="Bucket List"
-        subtitle="Like what you see ? Put it in the Bucket List !"
+        title="BingeBucket"
+        subtitle="Like what you see? Put it in the Bucket!"
       />
       <Navs />
 
