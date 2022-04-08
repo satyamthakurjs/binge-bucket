@@ -5,10 +5,7 @@ import Title from './Title';
 const MainPageLayout = ({ children }) => {
   return (
     <div>
-      <Title
-        title="BingeBucket"
-        subtitle="Like what you see? Put it in the Bucket!"
-      />
+      <Title title="Binge Bucket" subtitle="Happy Binging" />
       <Navs />
 
       {children}
