@@ -19,7 +19,7 @@ const ShowMainData = ({ name, rating, summary, tags, image }) => {
           className="summary"
           dangerouslySetInnerHTML={{ __html: summary }}
         />
-        aa
+
         <div>
           Tags:{' '}
           <TagList>
