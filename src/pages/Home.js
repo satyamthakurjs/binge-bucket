@@ -12,6 +12,7 @@ import {
   SearchInput,
 } from './Home.styled';
 import CustomRadio from '../components/CustomRadio';
+import { Msgs } from './Starred.styled';
 
 const Home = () => {
   const [input, setInput] = useLastQuery();
@@ -42,7 +43,11 @@ const Home = () => {
 
   const renderResults = () => {
     if (results && results.length === 0) {
-      return <div>huh ? are you having a stroke ?</div>;
+      return (
+        <Msgs>
+          <div className="messages">huh ? are you having a stroke ?</div>
+        </Msgs>
+      );
     }
 
     if (results && results.length > 0) {
