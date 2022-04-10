@@ -42,7 +42,7 @@ const Home = () => {
 
   const renderResults = () => {
     if (results && results.length === 0) {
-      return <div>Huh ? Are you having a stroke ?</div>;
+      return <div>huh ? are you having a stroke ?</div>;
     }
 
     if (results && results.length > 0) {

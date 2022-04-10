@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Star } from '../styled';
-import { StyledShowCard } from './ShowCard.styled';
+import { StyledShowCard, TitleLink, Summa } from './ShowCard.styled';
 
 const ShowCard = ({ id, image, name, summary, onStarClick, isStarred }) => {
   const summaryAsText = summary
@@ -16,12 +16,17 @@ const ShowCard = ({ id, image, name, summary, onStarClick, isStarred }) => {
         </Link>
       </div>
 
-      <h1>{name}</h1>
-
-      <p>{summaryAsText}</p>
+      <TitleLink>
+        <Link className="titlelink" to={`/show/${id}`}>
+          <h1>{name}</h1>
+        </Link>
+      </TitleLink>
+      <Summa>
+        <p className="summary">{summaryAsText}</p>
+      </Summa>
 
       <div className="btns">
-        <Link to={`/show/${id}`}>Details</Link>
+        <Link to={`/show/${id}`}>( Info )</Link>
         <button type="button" onClick={onStarClick}>
           <Star active={isStarred} />
         </button>

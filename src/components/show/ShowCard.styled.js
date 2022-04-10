@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { SearchCard } from '../styled';
+import { SearchCard, Summ, Title } from '../styled';
 
 export const StyledShowCard = styled(SearchCard)`
   .btns {
@@ -8,11 +8,13 @@ export const StyledShowCard = styled(SearchCard)`
     justify-content: space-between;
     align-items: center;
     a {
-      text-decoration-color: #000;
-      color: #000;
+      text-decoration: none;
+      color: #1167b1;
       &:hover {
+        color: #bbc2cc;
+      }
+      &:active {
         text-decoration-color: blue;
-        color: blue;
       }
     }
     button {
@@ -28,5 +30,24 @@ export const StyledShowCard = styled(SearchCard)`
         cursor: pointer;
       }
     }
+  }
+`;
+
+export const TitleLink = styled(Title)`
+  .titlelink {
+    text-decoration: none;
+    color: #1167b1;
+    &:hover {
+      color: #bbc2cc;
+    }
+    &:active {
+      text-decoration-color: lavender;
+    }
+  }
+`;
+
+export const Summa = styled(Summ)`
+  .summary {
+    text-align: center;
   }
 `;

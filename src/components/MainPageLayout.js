@@ -7,7 +7,6 @@ const MainPageLayout = ({ children }) => {
     <div>
       <Title title="Binge Bucket" subtitle="Happy Binging" />
       <Navs />
-
       {children}
     </div>
   );

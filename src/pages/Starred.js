@@ -3,6 +3,7 @@ import MainPageLayout from '../components/MainPageLayout';
 import { useShows } from '../misc/custom-hooks';
 import { apiGet } from '../misc/config';
 import ShowGrid from '../components/show/ShowGrid';
+import { Msgs } from './Starred.styled';
 
 const Starred = () => {
   const [starred] = useShows();
@@ -29,10 +30,14 @@ const Starred = () => {
   }, [starred]);
   return (
     <MainPageLayout>
-      {isLoading && <div>Shows are still loading</div>}
-      {error && <div>Error occured: {error}</div>}
-      {!isLoading && !shows && <div>No shows were added</div>}
-      {!isLoading && !error && shows && <ShowGrid data={shows} />}
+      <Msgs>
+        {isLoading && <div className="messages">Loading ...</div>}
+        {error && <div className="messages">Whoops, {error}</div>}
+        {!isLoading && !shows && (
+          <div className="messages">Your Bucket is Empty Bozo</div>
+        )}
+        {!isLoading && !error && shows && <ShowGrid data={shows} />}
+      </Msgs>
     </MainPageLayout>
   );
 };

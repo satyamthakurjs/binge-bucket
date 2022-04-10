@@ -15,11 +15,11 @@ const Show = () => {
   const { show, isLoading, error } = useShow(id);
 
   if (isLoading) {
-    return <div>data is being loaded</div>;
+    return <div>loading ...</div>;
   }
 
   if (error) {
-    return <div>Error Occured : {error}</div>;
+    return <div>Whoops, {error}</div>;
   }
 
   return (

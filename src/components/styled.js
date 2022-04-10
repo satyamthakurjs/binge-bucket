@@ -33,12 +33,15 @@ export const SearchCard = styled.div`
 
   .img-wrapper {
     width: 100%;
-    border-radius: 40px;
+    border-radius: 20px;
     height: 420px;
-    overflow: hidden;
     border: 1px solid #ddd;
 
     img {
+      border-radius: 20px;
+      border-style: solid;
+      border-width: 3px;
+      border-color: #424549;
       object-fit: cover;
       height: 100%;
       width: 100%;
@@ -53,4 +56,21 @@ export const SearchCard = styled.div`
   p {
     margin: 0;
   }
+`;
+
+export const Title = styled.h1`
+  display: flex;
+  justify-content: center;
+  font-family: 'Bitter', serif;
+  text-decoration: none;
+`;
+
+export const Summ = styled.p`
+  font-family: 'Bitter', serif;
+  text-decoration: none;
+`;
+
+export const Msg = styled.div`
+  font-family: 'Bitter', serif;
+  font-size: 18px;
 `;
