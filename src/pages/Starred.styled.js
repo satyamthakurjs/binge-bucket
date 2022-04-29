@@ -7,9 +7,6 @@ export const Msgs = styled(Msg)`
     color: black;
     margin: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 12px;
   }
 `;
