@@ -72,5 +72,5 @@ export const Summ = styled.p`
 
 export const Msg = styled.div`
   font-family: 'Bitter', serif;
-  font-size: 18px;
+  font-size: 10px;
 `;
