@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/binge-bucket/static/css/main.dd137fa2.css",
+    "main.js": "/binge-bucket/static/js/main.c2e86817.js",
+    "static/media/not-found.png": "/binge-bucket/static/media/not-found.a4e1475d94e1f3001c53.png",
+    "service-worker.js": "/binge-bucket/service-worker.js",
+    "index.html": "/binge-bucket/index.html",
+    "main.dd137fa2.css.map": "/binge-bucket/static/css/main.dd137fa2.css.map",
+    "main.c2e86817.js.map": "/binge-bucket/static/js/main.c2e86817.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd137fa2.css",
+    "static/js/main.c2e86817.js"
+  ]
+}
