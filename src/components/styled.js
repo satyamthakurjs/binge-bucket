@@ -1,7 +1,6 @@
-import styled from 'styled-components';
-import FadeIn from 'react-fade-in';
+import styled from "styled-components";
 
-export const FlexGrid = styled(FadeIn)`
+export const FlexGrid = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -11,7 +10,7 @@ export const Star = styled.div`
   display: inline-block;
   width: 18px;
   height: 18px;
-  background-color: ${props => (props.active ? '#ffc806' : '#ddd')};
+  background-color: ${(props) => (props.active ? "#ffc806" : "#ddd")};
   clip-path: polygon(
     50% 0%,
     61% 35%,
@@ -61,16 +60,16 @@ export const SearchCard = styled.div`
 export const Title = styled.h1`
   display: flex;
   justify-content: center;
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   text-decoration: none;
 `;
 
 export const Summ = styled.p`
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   text-decoration: none;
 `;
 
 export const Msg = styled.div`
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-size: 10px;
 `;
